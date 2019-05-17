@@ -1,0 +1,261 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav [mode]="mode.value">
+    <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+    <p>
+      <mat-radio-group class="example-radio-group" [formControl]="mode">
+        <label>Mode:</label>
+        <mat-radio-button value="over">Over</mat-radio-button>
+        <mat-radio-button value="side">Side</mat-radio-button>
+        <mat-radio-button value="push">Push</mat-radio-button>
+      </mat-radio-group>
+    </p>
+    <div class="inline">
+      <p>Chose needed element</p>
+      <a routerLink="autocomplete"
+        ><button mat-stroked-button color="primary">Autocomplete</button></a
+      >
+      <a routerLink="badge"
+        ><button mat-stroked-button color="primary">Badges</button></a
+      >
+      <a routerLink="buttons"
+        ><button mat-stroked-button color="primary">Buttons</button></a
+      >
+      <a routerLink="checkbox"
+        ><button mat-stroked-button color="primary">Checkbox</button></a
+      >
+      <a routerLink="chips"
+        ><button mat-stroked-button color="primary">Chips</button></a
+      >
+      <button
+        mat-stroked-button
+        color="primary"
+        routerLink="datepicker"
+        class="link"
+      >
+        Datepicker
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="devider"
+      >
+        Devider
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="dialog-injectable"
+      >
+        Dialog with Injectable
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="dialog-scroll"
+      >
+        Dialog with Scroll
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="dialog-simple"
+      >
+        Simple Dialog
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="expansion"
+      >
+        Expansion Panel
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="phone"
+      >
+        Phone Template
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="comment"
+      >
+        Comment
+      </button>
+      <button mat-stroked-button color="primary" class="link" routerLink="hint">
+        Form with hint
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="form-option"
+      >
+        Form Option
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="form-outlined"
+      >
+        Outlined Form
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="password"
+      >
+        Password Input
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="prefix"
+      >
+        Form with Prefix and Suffix
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="layout"
+      >
+        Grid Layout
+      </button>
+      <button mat-stroked-button color="primary" class="link" routerLink="list">
+        List
+      </button>
+      <button mat-stroked-button color="primary" class="link" routerLink="load">
+        Loading...
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="pages"
+      >
+        Paginator
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="custom-select"
+      >
+        Custom Select
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="simpl-exp"
+      >
+        Simple Expansion Component
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="slider"
+      >
+        Slider
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="snackbar"
+      >
+        Snackbar
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="spinner"
+      >
+        Spinner!
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="stepper"
+      >
+        Stepper
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="table-expand"
+      >
+        Expandable Table
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="table-filter"
+      >
+        Table with Filter Field
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="table-footer"
+      >
+        Table with Footer
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="table-http"
+      >
+        HTTP content Table
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="table-sort"
+      >
+        Sort Youre Table!
+      </button>
+      <button mat-stroked-button color="primary" class="link" routerLink="tabs">
+        Tabs
+      </button>
+      <button
+        mat-stroked-button
+        color="primary"
+        class="link"
+        routerLink="toolip"
+      >
+        Toolip
+      </button>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+    <div class="grid">
+      <button mat-button (click)="sidenav.toggle()">Toggle</button>
+      <img src="../assets/angular-white-transparent.svg" />
+      <h1>Angular Material Design</h1>
+      <p>Chose material component from the sidebar</p>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
